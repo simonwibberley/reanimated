@@ -1,1 +1,10 @@
 /* style.css */
+
+body {
+    background-color: red;
+}
+
+/* These classes are produced by the Zend navigation tool (publicNav). */
+ul.navigation {
+    border: 1px solid black;
+}

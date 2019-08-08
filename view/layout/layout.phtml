@@ -5,13 +5,19 @@ $this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/favicon.png')])
 
 <?php echo $this->doctype(); ?>
 
-
 <html>
-<head>
-  <?php echo $this->headLink(); ?>
-</head>
+  <head>
+    <?php echo $this->headLink(); ?>
+  </head>
 
-<body>
+  <body>
+
+    <?php
+      // Shortcut call.  zend-navigation is going to render the menu as a list
+      // by default.
+      echo $site->publicNav()->menu();
+    ?>
+
   <?php echo $this->content; ?>
-</body>
+  </body>
 </html>
