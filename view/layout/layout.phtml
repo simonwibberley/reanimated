@@ -1,6 +1,11 @@
 <?php
-$this->headLink()->prependStylesheet($this->assetUrl('css/style.css'));
+
+// As the stylesheet stack is empty by default, the use of append vs. prepend is
+// irrelevant in this context.
+$this->headLink()->appendStylesheet($this->assetUrl('css/style.css'));
 $this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/favicon.png')]);
+
+$this->headScript()->prependFile($this->assetUrl('js/reanimated.js'));
 ?>
 
 <?= $this->doctype() ?>
@@ -8,6 +13,7 @@ $this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/favicon.png')])
 <html>
   <head>
     <?= $this->headLink() ?>
+    <?= $this->headScript() ?>
   </head>
 
   <body>
