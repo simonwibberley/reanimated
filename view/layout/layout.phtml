@@ -3,21 +3,17 @@ $this->headLink()->prependStylesheet($this->assetUrl('css/style.css'));
 $this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/favicon.png')]);
 ?>
 
-<?php echo $this->doctype(); ?>
+<?= $this->doctype() ?>
 
 <html>
   <head>
-    <?php echo $this->headLink(); ?>
+    <?= $this->headLink() ?>
   </head>
 
   <body>
 
-    <?php
-      // Shortcut call.  zend-navigation is going to render the menu as a list
-      // by default.
-      echo $site->publicNav()->menu();
-    ?>
+    <?= $site->publicNav()->menu() ?>
 
-  <?php echo $this->content; ?>
+  <?= $this->content ?>
   </body>
 </html>
