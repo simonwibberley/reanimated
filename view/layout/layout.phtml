@@ -5,7 +5,9 @@
 $this->headLink()->appendStylesheet($this->assetUrl('css/style.css'));
 $this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/favicon.png')]);
 
-$this->headScript()->prependFile($this->assetUrl('js/reanimated.js'));
+// Masonry 4.2.2.
+$this->headScript()->appendFile($this->assetUrl('js/vendor/masonry.js'));
+$this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
 ?>
 
 <?= $this->doctype() ?>
@@ -21,5 +23,15 @@ $this->headScript()->prependFile($this->assetUrl('js/reanimated.js'));
     <?= $site->publicNav()->menu() ?>
 
   <?= $this->content ?>
+
+    <div id="the-grid">
+      <div class="grid-item"><img src="http://lorempixel.com/380/200/"/></div>
+      <div class="grid-item"><img src="http://lorempixel.com/380/200/"/></div>
+      <div class="grid-item"><img src="http://lorempixel.com/380/200/"/></div>
+      <div class="grid-item"><img src="http://lorempixel.com/380/200/"/></div>
+      <div class="grid-item"><img src="http://lorempixel.com/380/200/"/></div>
+      <div class="grid-item"><img src="http://lorempixel.com/380/200/"/></div>
+    </div>
+
   </body>
 </html>

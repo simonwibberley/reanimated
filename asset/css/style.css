@@ -8,3 +8,13 @@ body {
 ul.navigation {
     border: 1px solid black;
 }
+
+#the-grid {
+    background: silver;
+}
+
+.grid-item {
+  width: 400px;
+  height: 210px;
+  float: left;
+}
