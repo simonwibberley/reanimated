@@ -9,12 +9,13 @@ ul.navigation {
     border: 1px solid black;
 }
 
-#the-grid {
+.rdt-masonry-grid {
     background: silver;
+    list-style-type: none;
 }
 
-.grid-item {
-  width: 400px;
-  height: 210px;
-  float: left;
+.rdt-grid-item {
+    /* width: 400px; */
+    /* height: 210px; */
+    float: left;
 }
