@@ -1,1 +1,3 @@
 # reanimated
+
+An Omeka theme.
