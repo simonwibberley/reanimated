@@ -1,9 +1,18 @@
 <?php
-
-echo "This is coming from the page template.";
-
-//$this->trigger('view.show.before');
-echo $this->content;
-//$this->trigger('view.show.after');
-
+// This template will be triggered for every page that gets rendered.
+//echo "This is coming from the page template.";
 ?>
+
+<?php
+// Not sure what these triggers do.
+$this->trigger('view.show.before');
+?>
+
+<?= $this->content ?>
+
+<?php
+$this->trigger('view.show.after');
+?>
+
+
+
