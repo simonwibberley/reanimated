@@ -86,6 +86,7 @@ ul.navigation {
 }
 
 ul.navigation li {
+    list-style-type: none;
 }
 
 
