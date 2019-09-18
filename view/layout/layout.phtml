@@ -3,7 +3,7 @@
 // As the stylesheet stack is empty by default, the use of append vs. prepend is
 // irrelevant in this context.
 $this->headLink()->appendStylesheet($this->assetUrl('css/style.css'));
-$this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/favicon.png')]);
+$this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/pulse_logo.png')]);
 
 // Masonry 4.2.2.
 $this->headScript()->appendFile($this->assetUrl('js/vendor/masonry.js'));
@@ -28,6 +28,8 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
 
     <div class="rdt-container">
        <div class="rdt-side-menu">
+         
+         <img src="<?= $this->assetUrl('img/old_style_paper.jpg')?>" class="rdt-logo"/>
          <?= $site->publicNav()->menu() ?>
        </div>
        <div class="rdt-main-content">
