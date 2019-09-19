@@ -19,11 +19,14 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
   </head>
 
   <body>
+
+    <div class="page">
     <header>
-       <h1><?= $site->title() ?></h1>
+      <h1><?= $site->title() ?></h1>
 
-       <img src="<?= $this->assetUrl('img/pulse_logo.png') ?>" class="rdt-logo"/>
+      <img src="<?= $this->assetUrl('img/pulse_logo.png') ?>" class="rdt-logo"/>
 
+      <?= $this->partial('common/search-form') ?>
     </header>
 
     <div class="rdt-container">
@@ -37,7 +40,6 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
        </div>
     </div>
 
-
     <footer>
 <?php if ($footerContent = $this->themeSetting('footer')): ?>
 <?php echo $footerContent; ?>
@@ -45,5 +47,6 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
 <?php echo $this->translate('Powered by Omeka S'); ?>
 <?php endif; ?>
     </footer>
+    </div>
   </body>
 </html>

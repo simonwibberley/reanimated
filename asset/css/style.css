@@ -65,6 +65,7 @@ img.rdt-logo {
 
 div.rdt-container {
     display: flex;
+    min-height: 80vh;
 }
 
 div.rdt-side-menu {
@@ -90,3 +91,9 @@ ul.navigation li {
 }
 
 
+
+div.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
