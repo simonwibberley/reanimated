@@ -13,8 +13,8 @@ function onReady(e) {
 
     // crams items into a layout
     const masonryOptions = {
-        columnWidth: 400,
-        gutter: 0,
+        columnWidth: 200,
+        gutter: 10,
         itemSelector: '.rdt-grid-item'
     };
 

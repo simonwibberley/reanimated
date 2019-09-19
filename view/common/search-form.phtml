@@ -1,3 +1,5 @@
+<!-- BEGIN common/search-form.phtml -->
+
 <?php
 $translate = $this->plugin('translate');
 $searchValue = $this->escapeHtml($this->params()->fromQuery('search', ''));
@@ -10,3 +12,5 @@ $searchValue = $this->escapeHtml($this->params()->fromQuery('search', ''));
            placeholder="<?php echo $translate('Search'); ?>">
     <button type="submit"><?php echo $translate('Search'); ?></button>
 </form>
+
+<!-- END common/search-form.phtml -->

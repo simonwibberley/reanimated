@@ -27,7 +27,6 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
 
       <img src="<?= $this->assetUrl('img/pulse_logo.png') ?>" class="rdt-logo"/>
 
-      <?= $this->partial('common/search-form') ?>
     </header>
 
     <div class="rdt-container">
@@ -35,7 +34,10 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
          
          <img src="<?= $this->assetUrl('img/old_style_paper.jpg')?>" class="rdt-logo"/>
          <?= $site->publicNav()->menu() ?>
+
+         <?= $this->partial('common/search-form') ?>
        </div>
+
        <div class="rdt-main-content">
          <?= $this->content ?>
        </div>
