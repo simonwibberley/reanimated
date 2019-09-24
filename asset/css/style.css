@@ -104,6 +104,11 @@ ul.navigation {
 
 ul.navigation li {
     list-style-type: none;
+    color: var(--off-black);
+
+    /* Not sure that these styles are actually appropriate for RDT */
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 
@@ -113,6 +118,9 @@ input[type=text] {
     border: 1px solid black;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
+
+    margin-left: 0.4em;
+    margin-right: 0.4em;
 }
 
 input[type=text]:focus {
