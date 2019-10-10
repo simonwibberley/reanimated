@@ -27,19 +27,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-
-/*    background-image: url("../img/IMG_7630.jpg");
-    background-size: cover;*/
-
     width: 80vw;
 
-    /* Fix the margins, auto doesn't work well */
+    /* Fix the margins, auto doesn't work well and causes odd glitches */
     margin-left: 10vw;
     margin-right: 10vw;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     
-    /* Style rules from BMFW */
+    /* Style rules from BMFW.  These make a HUGE difference */
     font-size: 18px;
     line-height: 1.6;
 }
@@ -72,7 +68,7 @@ h2 {
 
 .rdt-grid-item {
     width: 200px;
-/*    height: 210px;*/
+    height: 300px;
     float: left;
     /* border: 1px solid cyan; */
 }
