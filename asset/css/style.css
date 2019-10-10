@@ -62,7 +62,7 @@ h2 {
 
 
 .rdt-masonry-grid {
-    background: rgba(0, 0, 0, 0.01);
+    /* background: rgba(0, 0, 0, 0.01); */
     list-style-type: none;
 }
 
@@ -70,8 +70,17 @@ h2 {
     width: 200px;
     height: 300px;
     float: left;
-    /* border: 1px solid cyan; */
+    background-color: rgba(0, 0, 0, 0.02);
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-bottom: 1em;
+    display: block;
+    transition: 0.4s;
 }
+.rdt-grid-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 
 header {
     padding: 0.2em;
