@@ -26,14 +26,12 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
     <header>
       <h1><?= $site->title() ?></h1>
 
-      <img src="<?= $this->assetUrl('img/pulse_logo.png') ?>" class="rdt-logo"/>
 
     </header>
 
     <div class="rdt-container">
        <div class="rdt-side-menu">
          
-         <img src="<?= $this->assetUrl('img/old_style_paper.jpg')?>" class="rdt-logo"/>
          <?= $site->publicNav()->menu() ?>
 
          <?= $this->partial('common/search-form') ?>
