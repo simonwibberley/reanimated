@@ -32,7 +32,7 @@ video {
 
 body {
     background-color: hsl(0, 0%, 99%);
-/*    background-image: url('../img/background.svg');  */
+    background-image: url('../img/background.svg');
     background-size: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
