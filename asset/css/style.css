@@ -20,9 +20,19 @@ input {
 a { color: var(--off-black) }
 a:hover { color: green }
 
+
+/*
+    It's a reasonable default to treat videos as flow content; without this,
+    large videos will stretch outside of their container.
+*/
+video {
+    width: 100%;
+}
+
+
 body {
     background-color: hsl(0, 0%, 99%);
-    background-image: url('../img/background.svg');
+/*    background-image: url('../img/background.svg');  */
     background-size: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;

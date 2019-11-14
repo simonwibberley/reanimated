@@ -14,12 +14,16 @@ $itemMedia = $item->media();
 <?php if ($embedMedia && $itemMedia): ?>
     <div class="media-embeds">
     <?php foreach ($itemMedia as $media):
-        echo $media->render();
+              echo $media->render();
     endforeach;
     ?>
     </div>
 <?php endif; ?>
-<?php echo $item->displayValues(); ?>
+
+<?php 
+echo $item->displayValues(); 
+?>
+
 <div class="property">
     <?php $itemSets = $item->itemSets(); ?>
     <?php if (count($itemSets) > 0): ?>
@@ -32,7 +36,10 @@ $itemMedia = $item->media();
 <?php if (!$embedMedia && $itemMedia): ?>
 <div class="media-list">
     <?php foreach ($itemMedia as $media): ?>
-        <?php echo $media->linkPretty(); ?>
+        <?php 
+          // Attached media gets shown using this call
+          echo $media->linkPretty(); 
+        ?>
     <?php endforeach; ?>
 </div>
 <?php endif; ?>
