@@ -43,18 +43,26 @@
   <?= $this->sortSelector($sortHeadings); ?>
 </div>
 
+<table>
+<?php
+foreach ($items as $item) {
+?>
 
 <?php
-foreach ($items as $item):
     $title = $item->value('dcterms:title');
     $body = $item->value('dcterms:description');
 ?>
 
-  <?= $item->linkRaw($this->thumbnail($item, 'medium')) ?>
-  <?= $title ?>
+  
+
+  <tr>
+    <td><?= $title ?></td>
+    <td><?= $item->linkRaw($this->thumbnail($item, 'medium')) ?></td>
+  </tr>
 
 <?php
-endforeach;
+}
 ?>
+</table>
 
 <!-- END browse.phtml -->

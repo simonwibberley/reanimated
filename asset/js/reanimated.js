@@ -1,4 +1,3 @@
-
 function onLayoutComplete(e) {
     console.log("masonry: layout complete");
 }
