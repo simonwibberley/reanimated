@@ -1,5 +1,7 @@
 /* style.css */
 
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
 /*  Within CSS, all of the URLs should be relative, because a theme could be
     installed under any directory. */
 
@@ -43,7 +45,7 @@ body {
     margin-left: 10vw;
     margin-right: 10vw;
 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Didact Gothic", sans-serif;
     
     /* Style rules from BMFW.  These make a HUGE difference */
     font-size: 18px;
