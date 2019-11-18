@@ -271,7 +271,7 @@ form[name^="collecting_form_"] div.field {
     margin: 1em;
 }
 
-form[name^="collecting_form_"] input,textarea {
+form[name^="collecting_form_"] input[type="text"],textarea {
     width: 32em;
 }
 
