@@ -245,7 +245,7 @@ div.rdt-advanced-search-link {
     margin-bottom: 0.5rem;
 }
 
-button, select, input[type="submit"], input[type="file"] {
+button, select, input[type="submit"] {
     background-color: hsla(0, 0%, 99%, 100%);
     padding: 0.25rem 0.5rem;
 }
