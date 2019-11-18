@@ -2,6 +2,7 @@
 
 // As the stylesheet stack is empty by default, the use of append vs. prepend is
 // irrelevant in this context.
+$this->headLink()->appendStylesheet($this->assetUrl('css/iconfonts.css'));
 $this->headLink()->appendStylesheet($this->assetUrl('css/vendor/normalize.css'));
 $this->headLink()->appendStylesheet($this->assetUrl('css/style.css'));
 $this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/pulse_logo.png')]);

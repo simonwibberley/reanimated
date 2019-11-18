@@ -1,6 +1,10 @@
 /* style.css */
 
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+@font-face {
+    font-family: "Didact Gothic";
+    src: url("../fonts/DidactGothicRegular.woff2");
+    font-display: block;
+}
 
 /*  Within CSS, all of the URLs should be relative, because a theme could be
     installed under any directory. */
@@ -205,4 +209,21 @@ table.rdt-resource-values th, td {
 td.rdt-property {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+/* Browse controls on the search result page */
+
+div.browse-controls {
+}
+
+
+nav.pagination {
+}
+
+form.sorting {
+}
+
+
+input.page-input-top {
+/*    width: 1em;*/
 }
