@@ -274,3 +274,7 @@ form[name^="collecting_form_"] div.field {
 form[name^="collecting_form_"] input,textarea {
     width: 32em;
 }
+
+textarea {
+    height: 16em;
+}
