@@ -150,7 +150,7 @@ ul.navigation li {
 
 
 /* Cute input boxes with a focus shadow */
-input[type=text] {
+input[type=text], textarea {
     background-color: var(--off-white);
     border: 1px solid black;
     padding-top: 0.4em;
