@@ -7,10 +7,11 @@ $translate = $this->plugin('translate');
 <?php if ($totalCount): ?>
     <form method="GET" action="">
         <?php echo $this->queryToHiddenInputs(['page']); ?>
-                             Page <input type="text" name="page" class="page-input-top" value="<?php echo $currentPage; ?>" size="4" <?php echo ($pageCount == 1) ? 'readonly' : ''; ?> aria-label="<?php echo $translate('Page'); ?>">
+        Page <input type="text" name="page" class="page-input-top" value="<?php echo $currentPage; ?>" size="4" <?php echo ($pageCount == 1) ? 'readonly' : ''; ?> aria-label="<?php echo $translate('Page'); ?>">
         <span class="page-count"><?php echo sprintf($translate('of %s'), $pageCount); ?></span>
     </form>
 
+    <div class="rdt-page-buttons">
     <?php if ($currentPage != 1): ?>
     <?php echo $this->hyperlink('', $previousPageUrl, ['class' => 'previous o-icon-prev button', 'title' => $translate('Previous'), 'aria-label' => $translate('Previous')]); ?>
     <?php else: ?>
@@ -22,12 +23,13 @@ $translate = $this->plugin('translate');
     <?php else: ?>
     <span class="next o-icon-next button inactive"></span>
     <?php endif; ?>
+    </div>
 
     <?php
     $from = $offset + 1;
     $to = ($currentPage < $pageCount) ? $offset + $perPage : $totalCount;
     ?>
-    <span class="row-count"><?php echo sprintf($translate('%s–%s of %s'), $from, $to, $totalCount); ?></span>
+    <span class="row-count">Showing items <?= sprintf($translate('%s–%s of %s'), $from, $to, $totalCount) ?>.</span>
 <?php else: ?>
     <?php echo $translate('0 results'); ?>
 <?php endif; ?>

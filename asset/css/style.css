@@ -212,18 +212,27 @@ td.rdt-property {
 }
 
 /* Browse controls on the search result page */
-
 div.browse-controls {
+    background-color: hsla(0, 0%, 99%, 30%);
 }
 
 
 nav.pagination {
+    margin-bottom: 1em;
 }
 
-form.sorting {
+nav.pagination > form {
+    display: inline;
 }
-
 
 input.page-input-top {
-/*    width: 1em;*/
+    width: 1.5em;
 }
+
+div.rdt-page-buttons {
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
