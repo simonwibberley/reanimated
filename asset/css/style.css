@@ -263,4 +263,10 @@ form.rdt-search-form {
 
 
 form[name^="collecting_form_"] {
+    background-color: hsla(0, 0%, 99%, 30%);
+}
+
+form[name^="collecting_form_"] div.field {
+    padding: 1em;
+    margin: 1em;
 }
