@@ -165,8 +165,6 @@ input[type=text]:focus {
 }
 
 
-button { display: none }
-
 
 /* Styling for item page. */
 div.value {
@@ -214,6 +212,7 @@ td.rdt-property {
 /* Browse controls on the search result page */
 div.browse-controls {
     background-color: hsla(0, 0%, 99%, 30%);
+    padding: 1em;
 }
 
 
@@ -235,4 +234,29 @@ div.rdt-page-buttons {
     margin-right: 1em;
 }
 
+
+form.sorting > * {
+    margin-right: 1em;
+}
+
+
+div.rdt-advanced-search-link {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+button, select {
+    background-color: hsla(0, 0%, 99%, 100%);
+    padding: 0.25rem 0.5rem;
+}
+
+
+button.rdt-search-button {
+    margin-top: 0.5em;
+}
+
+form.rdt-search-form {
+    background-color: hsla(0, 0%, 99%, 30%);
+    padding: 1em;
+}
 

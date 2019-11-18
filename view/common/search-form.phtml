@@ -6,11 +6,12 @@ $searchValue = $this->escapeHtml($this->params()->fromQuery('search', ''));
 ?>
 
 <form action="<?= $this->escapeHtml($this->url('site/resource', ['controller' => 'item','action' => 'browse'], true)) ?>"
-            id="search-form">
+            id="search-form"
+            class="rdt-search-form">
     <input type="text" name="search"
            value="<?php echo $searchValue; ?>"
            placeholder="<?php echo $translate('Search'); ?>">
-    <button type="submit"><?php echo $translate('Search'); ?></button>
+    <button class="rdt-search-button" type="submit"><?php echo $translate('Search'); ?></button>
 </form>
 
 <!-- END common/search-form.phtml -->

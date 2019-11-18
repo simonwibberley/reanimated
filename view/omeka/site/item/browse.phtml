@@ -22,14 +22,18 @@
 ];
 ?>
 
-<h3>Items</h3>
+<h3>Search results</h3>
 
 <div class="browse-controls">
   <?= $this->pagination(); ?>
 
+  <?= $this->sortSelector($sortHeadings); ?>
+
+  <div class="rdt-advanced-search-link">
+             (Or, use
   <?= 
     $this->hyperlink(
-        'Advanced search', 
+        'advanced search', 
         $this->url(
             'site/resource', 
             ['controller' => 'item', 'action' => 'search'],
@@ -37,8 +41,9 @@
              true
         ), ['class' => 'advanced-search']
     )
-  ?>  
-  <?= $this->sortSelector($sortHeadings); ?>
+                ?>.)
+  </div>
+
 </div>
 
 <table>
