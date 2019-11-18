@@ -8,8 +8,10 @@ $embedMedia = $this->siteSetting('item_media_embed', false);
 $itemMedia = $item->media();
 ?>
 
-<?php echo $this->pageTitle($item->displayTitle(), 2); ?>
-<h3><?php echo $translate('Item'); ?></h3>
+
+<h3 class="rdt-item-header">
+<span class="rdt-header-prefix"><?php echo $translate('Item'); ?></span>: <?= $item->displayTitle(); ?>
+</h3>
 <?php $this->trigger('view.show.before'); ?>
 <?php if ($embedMedia && $itemMedia): ?>
     <div class="media-embeds">
@@ -21,6 +23,8 @@ $itemMedia = $item->media();
 <?php endif; ?>
 
 <?php 
+// This call renders all the metadata.  It calls through to
+// 'common/resource-values.phtml'.
 echo $item->displayValues(); 
 ?>
 
@@ -33,8 +37,11 @@ echo $item->displayValues();
     <?php endforeach; ?>
     <?php endif; ?>
 </div>
+
 <?php if (!$embedMedia && $itemMedia): ?>
+
 <div class="media-list">
+<h3>Attached Media</h3>
     <?php foreach ($itemMedia as $media): ?>
         <?php 
           // Attached media gets shown using this call

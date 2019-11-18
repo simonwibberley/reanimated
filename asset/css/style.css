@@ -162,3 +162,47 @@ input[type=text]:focus {
 
 
 button { display: none }
+
+
+/* Styling for item page. */
+div.value {
+    margin: 1em;
+}
+
+
+div.media-list {
+    background-color: hsla(0, 0%, 99%, 40%);
+    padding: 2em;
+    margin-top: 2em;
+}
+
+/* resource-name is hardcoded CSS class. */
+span.resource-name {
+    display: block;
+}
+
+
+
+.rdt-item-header {
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+span.rdt-header-prefix {
+    font-style: italic;
+}
+
+table.rdt-resource-values {
+    table-layout: fixed;
+    background-color: hsla(0, 0%, 99%, 30%);
+}
+
+
+table.rdt-resource-values th, td {
+    padding: 1em;
+}
+
+td.rdt-property {
+    text-transform: uppercase;
+    font-weight: bold;
+}
