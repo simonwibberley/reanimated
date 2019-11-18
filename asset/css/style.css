@@ -269,4 +269,5 @@ form[name^="collecting_form_"] {
 form[name^="collecting_form_"] div.field {
     padding: 1em;
     margin: 1em;
+    width: 100%;
 }
