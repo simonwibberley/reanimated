@@ -260,3 +260,7 @@ form.rdt-search-form {
     padding: 1em;
 }
 
+
+
+form[name^="collecting_form_"] {
+}
