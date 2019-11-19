@@ -295,3 +295,17 @@ form[name^="collecting_form_"] input[type="text"],textarea {
 textarea {
     height: 16em;
 }
+
+table.rdt-browse-results {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+table.rdt-browse-results tr {
+    border: 1em solid hsla(0, 0%, 99%, 80%);
+    background-color: hsla(0, 0%, 99%, 30%);
+}
+
+table.rdt-browse-results tr:hover {
+    background-color: hsla(0, 0%, 99%, 70%);
+}
