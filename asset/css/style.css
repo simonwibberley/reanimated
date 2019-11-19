@@ -38,7 +38,7 @@ a:hover { color: green }
     large videos will stretch outside of their container.
 */
 video {
-    width: 100%;
+    width: 90%;
 }
 
 
