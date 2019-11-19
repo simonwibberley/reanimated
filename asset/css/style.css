@@ -86,6 +86,7 @@ h2 {
 .rdt-masonry-grid {
     /* background: rgba(0, 0, 0, 0.01); */
     list-style-type: none;
+    margin-bottom: 8em;
 }
 
 .rdt-grid-item {
@@ -106,7 +107,7 @@ h2 {
 }
 
 .rdt-grid-item:hover {
-    background-color: hsla(0, 0%, 85%, 100%);
+    background-color: hsla(0, 0%, 99%, 90%);
     overflow: visible;
     height: auto;
     z-index: 1;
