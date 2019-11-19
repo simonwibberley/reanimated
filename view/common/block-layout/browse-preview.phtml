@@ -1,9 +1,8 @@
 <ul class="resource-list preview rdt-masonry-grid">
 <?php foreach ($this->resources as $resource): ?>
     <li class="<?php echo $this->resourceType; ?> resource rdt-grid-item">
-        <?php echo $resource->linkRaw($this->thumbnail($resource, 'medium', ['title' => $heading])); ?>
-             <h4><?= $resource->link($resource->displayTitle()); ?></h4>
-             <div class="description"><?= $resource->displayDescription() ?>
+    <?php echo $resource->linkRaw($this->thumbnail($resource, 'medium', ['title' => $heading])); ?>
+             <span><?= $resource->link($resource->displayTitle()); ?></span>
     </li>
 <?php endforeach; ?>
 </ul>

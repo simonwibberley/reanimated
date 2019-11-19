@@ -86,15 +86,25 @@ h2 {
     width: 200px;
     height: 300px;
     float: left;
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: hsla(0, 0%, 0%, 5%);
     padding-left: 0.3em;
     padding-right: 0.3em;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
     margin-bottom: 1em;
     display: block;
     transition: 0.4s;
+    overflow: hidden;
+    z-index: 0;
+    box-sizing: border-box;
 }
+
 .rdt-grid-item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: hsla(0, 0%, 85%, 100%);
+    overflow: visible;
+    height: auto;
+    z-index: 1;
+    border-radius: 0.25em;
 }
 
 
