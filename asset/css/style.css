@@ -119,9 +119,10 @@ header {
     /* border: 0.2em solid hsl(0, 0%, 90%); */
 }    
 
-footer {
+div.footer {
     padding: 0.2em;
     font-style: italic;
+    margin: 1em;
     /* border: 0.2em solid hsl(0, 0%, 90%); */
 }
 
