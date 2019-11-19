@@ -6,6 +6,12 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab.woff2");
+    font-display: block;
+}
+
 /*  Within CSS, all of the URLs should be relative, because a theme could be
     installed under any directory. */
 
@@ -60,7 +66,7 @@ body {
    of a given page.  This seems to be controlled by the file
    `src/Site/BlockLayout/PageTitle.php`. */
 h1, h2, h3, h4 {
-    font-family: museo-slab, serif;
+    font-family: "Roboto Slab", serif;
     font-style: normal;
     font-weight: 100;
 }
