@@ -59,7 +59,7 @@ foreach ($items as $item) {
   
 
   <tr>
-    <td><?= $title ?></td>
+    <td><?= $item->linkRaw($title) ?></td>
     <td><?= $item->linkRaw($this->thumbnail($item, 'medium')) ?></td>
   </tr>
 
