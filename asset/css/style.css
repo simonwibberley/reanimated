@@ -49,9 +49,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    width: 80vw;
-
-    /* Fix the margins, auto doesn't work well and causes odd glitches */
+    /* From prototype. */
     margin-left: 1em;
 
     /* This is required!  Otherwise the presence of the scrollbar causes the
@@ -143,20 +141,14 @@ img.rdt-logo {
 /* NAVIGATION */
 
 div.rdt-container {
-    display: flex;
-    min-height: 80vh;
 }
 
 div.rdt-navigation-menu {
-    flex-basis: 10%;
-    margin-right: 10rem;
     /* border: 1px solid red; */
 }
 
 div.rdt-main-content {
-    flex-basis: 90%;
     /* border: 1px solid blue; */
-    margin-bottom: 4em;
 }
 
 /* These classes are produced by the Zend navigation tool (publicNav). */
@@ -173,6 +165,8 @@ ul.navigation li {
     /* Not sure that these styles are actually appropriate for RDT */
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    display: inline;
 }
 
 
