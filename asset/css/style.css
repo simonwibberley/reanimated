@@ -47,7 +47,7 @@ body {
     background-image: url('../img/background.svg');
     background-size: 16em;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
 
     /* From prototype. */
     margin-left: 1em;
@@ -123,8 +123,18 @@ header {
 
     /* Horizontally limit the size of the site header so that it doesn't
        flow over the entire page. */
-    width: 24em;
+/*    width: 24em;*/
+    display: flex;
 }    
+
+div.rdt-site-title {
+    flex-basis: 24em;
+}
+
+div.rdt-search {
+    flex-basis: 10%;
+    margin-left: 50vw;
+}
 
 div.footer {
     padding: 0.2em;
@@ -145,12 +155,7 @@ div.rdt-container {
 
 div.rdt-navigation-menu {
     margin-left: 10vw;
-    margin-right: 10vm;
-    /* border: 1px solid red; */
-}
-
-div.rdt-search {
-    margin-left: 80vw;
+    margin-right: 10vw;
 }
 
 div.rdt-main-content {
@@ -161,16 +166,15 @@ div.rdt-main-content {
 
 /* These classes are produced by the Zend navigation tool (publicNav). */
 ul.navigation {
-    border: 0.2em solid hsl(0, 0%, 90%);
-    padding: 0.2em;
-    flex: 50%;
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 15vw;
 }
 
 ul.navigation li {
     list-style-type: none;
     color: var(--off-black);
 
-    /* Not sure that these styles are actually appropriate for RDT */
     text-transform: uppercase;
     letter-spacing: 1px;
 
