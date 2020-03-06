@@ -30,21 +30,13 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
 
     </header>
 
+    <div class="rdt-search">
+      <?= $this->partial('common/search-form') ?>
+    </div>
+
     <div class="rdt-container">
        <div class="rdt-navigation-menu">
-         
          <?= $site->publicNav()->menu() ?>
-
-         <?= $this->partial('common/search-form') ?>
-
-<div class="footer">
-<?php if ($footerContent = $this->themeSetting('footer')): ?>
-<?php echo $footerContent; ?>
-<?php else: ?>
-<?php echo $this->translate('Powered by Omeka S'); ?>
-<?php endif; ?>
-</div>
-
        </div>
 
        <div class="rdt-main-content">

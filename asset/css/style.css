@@ -144,10 +144,18 @@ div.rdt-container {
 }
 
 div.rdt-navigation-menu {
+    margin-left: 10vw;
+    margin-right: 10vm;
     /* border: 1px solid red; */
 }
 
+div.rdt-search {
+    margin-left: 80vw;
+}
+
 div.rdt-main-content {
+    margin-left: 10vw;
+    margin-right: 10vw;
     /* border: 1px solid blue; */
 }
 
