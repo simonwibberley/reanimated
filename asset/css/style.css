@@ -161,6 +161,11 @@ div.rdt-main-content {
     margin-bottom: 8em;
 }
 
+div.rdt-clearleft {
+    clear: left;
+}
+
+
 /* These classes are produced by the Zend navigation tool (publicNav). */
 ul.navigation {
     text-align: center;
