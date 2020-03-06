@@ -27,6 +27,7 @@
 
 input {
     background-color: var(--light-grey);
+    padding-left: 1em;
 }
 
 a { color: var(--off-black) }
