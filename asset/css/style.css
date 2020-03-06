@@ -147,7 +147,7 @@ div.rdt-container {
     min-height: 80vh;
 }
 
-div.rdt-side-menu {
+div.rdt-navigation-menu {
     flex-basis: 10%;
     margin-right: 10rem;
     /* border: 1px solid red; */
