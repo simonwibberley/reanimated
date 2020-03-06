@@ -45,15 +45,14 @@ video {
 body {
     background-color: hsl(0, 0%, 99%);
     background-image: url('../img/background.svg');
-    background-size: 50%;
+    background-size: 16em;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     width: 80vw;
 
     /* Fix the margins, auto doesn't work well and causes odd glitches */
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 1em;
 
     /* This is required!  Otherwise the presence of the scrollbar causes the
        SVG to resize in an ugly way */
@@ -123,6 +122,10 @@ h2 {
 header {
     padding: 0.2em;
     /* border: 0.2em solid hsl(0, 0%, 90%); */
+
+    /* Horizontally limit the size of the site header so that it doesn't
+       flow over the entire page. */
+    width: 24em;
 }    
 
 div.footer {
