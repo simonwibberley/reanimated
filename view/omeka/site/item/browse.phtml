@@ -60,7 +60,9 @@ foreach ($items as $item) {
 
   <tr>
     <td><?= $item->linkRaw($title) ?></td>
-    <td><?= $item->linkRaw($this->thumbnail($item, 'medium')) ?></td>
+    <td class="rdt-thumbnail-cell">
+      <?= $item->linkRaw($this->thumbnail($item, 'medium')) ?>
+    </td>
   </tr>
 
 <?php
