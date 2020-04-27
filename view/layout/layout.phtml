@@ -22,31 +22,22 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
   </head>
 
   <body>
-
-    <div class="page">
+    <div class="rdt-page">
     <header>
-      <h1><?= $site->title() ?></h1>
-
-
+      <div class="rdt-site-title">
+        <h1><?= $site->title() ?></h1>
+      </div>
+      <div class="rdt-search">
+        <?= $this->partial('common/search-form') ?>
+      </div>
     </header>
 
+
     <div class="rdt-container">
-       <div class="rdt-side-menu">
-         
+       <div class="rdt-navigation-menu">
          <?= $site->publicNav()->menu() ?>
-
-         <?= $this->partial('common/search-form') ?>
-
-<div class="footer">
-<?php if ($footerContent = $this->themeSetting('footer')): ?>
-<?php echo $footerContent; ?>
-<?php else: ?>
-<?php echo $this->translate('Powered by Omeka S'); ?>
-<?php endif; ?>
-</div>
-
        </div>
-
+             
        <div class="rdt-main-content">
          <?= $this->content ?>
        </div>

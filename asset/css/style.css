@@ -27,6 +27,7 @@
 
 input {
     background-color: var(--light-grey);
+    padding-left: 1em;
 }
 
 a { color: var(--off-black) }
@@ -45,15 +46,12 @@ video {
 body {
     background-color: hsl(0, 0%, 99%);
     background-image: url('../img/background.svg');
-    background-size: 50%;
+    background-size: 16em;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
 
-    width: 80vw;
-
-    /* Fix the margins, auto doesn't work well and causes odd glitches */
-    margin-left: 10vw;
-    margin-right: 10vw;
+    /* From prototype. */
+    margin-left: 1em;
 
     /* This is required!  Otherwise the presence of the scrollbar causes the
        SVG to resize in an ugly way */
@@ -123,7 +121,21 @@ h2 {
 header {
     padding: 0.2em;
     /* border: 0.2em solid hsl(0, 0%, 90%); */
+
+    /* Horizontally limit the size of the site header so that it doesn't
+       flow over the entire page. */
+/*    width: 24em;*/
+    display: flex;
 }    
+
+div.rdt-site-title {
+    flex-basis: 24em;
+}
+
+div.rdt-search {
+    flex-basis: 10%;
+    margin-left: 50vw;
+}
 
 div.footer {
     padding: 0.2em;
@@ -138,38 +150,37 @@ img.rdt-logo {
 }
 
 /* NAVIGATION */
-
-div.rdt-container {
-    display: flex;
-    min-height: 80vh;
-}
-
-div.rdt-side-menu {
-    flex-basis: 10%;
-    margin-right: 10rem;
-    /* border: 1px solid red; */
-}
-
 div.rdt-main-content {
-    flex-basis: 90%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    /* The dropdown code below uses floats, so has to be cleared here. :( */
+    clear: left;
     /* border: 1px solid blue; */
-    margin-bottom: 4em;
+
+    margin-bottom: 8em;
 }
+
+div.rdt-clearleft {
+    clear: left;
+}
+
 
 /* These classes are produced by the Zend navigation tool (publicNav). */
 ul.navigation {
-    border: 0.2em solid hsl(0, 0%, 90%);
-    padding: 0.2em;
-    flex: 50%;
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 15vw;
 }
 
 ul.navigation li {
     list-style-type: none;
     color: var(--off-black);
 
-    /* Not sure that these styles are actually appropriate for RDT */
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    display: inline;
 }
 
 
@@ -310,9 +321,130 @@ table.rdt-browse-results {
 
 table.rdt-browse-results tr {
     border: 1em solid hsla(0, 0%, 99%, 80%);
-    background-color: hsla(0, 0%, 99%, 30%);
+    background-color: hsla(0, 0%, 90%, 30%);
 }
 
 table.rdt-browse-results tr:hover {
-    background-color: hsla(0, 0%, 99%, 70%);
+    background-color: hsla(0, 0%, 90%, 60%);
+}
+
+table.rdt-browse-results td {
+    border: 1em solid hsla(0, 0%, 99%, 80%);
+}
+
+td.rdt-thumbnail-cell {
+    text-align: center;
+}
+
+/* MENU CODE */
+/* Taken from: Deliciousthemes article by Madalin Tudose. */
+/* https://deliciousthemes.com/create-a-drop-down-navigation-menu-with-html5-and-css3 */
+
+div.rdt-navigation-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+ 
+ul.navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+
+    /* Only border-right is needed.  The menu will get a left border from one
+       of its children */
+    border-right:1px solid #c4dbe7;
+}
+ 
+ul.navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-top:1px solid #c4dbe7;
+    border-bottom:2px solid #c4dbe7;
+}
+ 
+ul.navigation li a {
+    padding: 10px 25px;
+    color: #616161;
+    text-shadow: 1px 1px 0px #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #C2C2C2;
+    border-top: 1px solid #fff;
+    background: #f5f5f5;
+ 
+    -webkit-transition:color 0.2s linear, background 0.2s linear;
+    -moz-transition:color 0.2s linear, background 0.2s linear;
+    -o-transition:color 0.2s linear, background 0.2s linear;
+    transition:color 0.2s linear, background 0.2s linear;
+}
+ 
+ul.navigation li a:hover {
+    background: #f8f8f8;
+    color: #282828;
+}
+ 
+ul.navigation li:hover > a {
+    background: #fff;
+}
+
+
+ul.navigation li:hover > ul
+{
+    visibility:visible;
+    opacity:1;
+}
+ 
+ul.navigation ul, ul.navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#f8f8f8;
+    box-shadow:1px 1px 3px #ccc;
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;
+}
+ 
+ul.navigation ul {
+    top: 43px;
+    left: 1px;
+}
+ 
+ul.navigation ul li ul {
+    top: 0;
+    left: 181px;
+}
+ 
+ul.navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+ 
+ul.navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
 }
