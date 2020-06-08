@@ -199,14 +199,6 @@ input[type=text]:focus {
   box-shadow: 0 0 5px var(--off-black);
 }
 
-
-
-/* Styling for item page. */
-div.value {
-    margin: 1em;
-}
-
-
 div.media-list {
     background-color: hsla(0, 0%, 99%, 40%);
     padding: 2em;
@@ -223,14 +215,16 @@ table.rdt-resource-values {
     background-color: hsla(0, 0%, 99%, 30%);
 }
 
-
 table.rdt-resource-values th, td {
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1.5em;
 }
 
 td.rdt-property {
     text-transform: uppercase;
     font-weight: bold;
+    vertical-align: top;
 }
 
 /* Browse controls on the search result page */
