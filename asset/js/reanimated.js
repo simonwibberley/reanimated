@@ -1,3 +1,5 @@
+const GRID_CLASS = '.rdt-masonry-grid';
+
 function onLayoutComplete(e) {
     console.log("masonry: layout complete");
 }
@@ -10,14 +12,16 @@ function setupMasonry() {
         itemSelector: '.rdt-grid-item'
     };
 
-    const masonry = new Masonry('.rdt-masonry-grid', masonryOptions);
+    const masonry = new Masonry(GRID_CLASS, masonryOptions);
     masonry.on('layoutComplete', onLayoutComplete);
 
     masonry.layout();
 }
 
 function onReady(e) {
-    setupMasonry(gridNodeList);
+    const gridElement = document.querySelector(GRID_CLASS);
+    if (gridElement !== null) 
+        setupMasonry();
 }
 
 document.addEventListener('DOMContentLoaded', onReady);
