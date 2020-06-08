@@ -218,17 +218,6 @@ span.resource-name {
     display: block;
 }
 
-
-
-.rdt-item-header {
-    font-weight: 200;
-    font-size: 2rem;
-}
-
-span.rdt-header-prefix {
-    font-style: italic;
-}
-
 table.rdt-resource-values {
     table-layout: fixed;
     background-color: hsla(0, 0%, 99%, 30%);

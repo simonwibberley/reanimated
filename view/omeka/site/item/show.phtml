@@ -8,10 +8,6 @@ $embedMedia = $this->siteSetting('item_media_embed', false);
 $itemMedia = $item->media();
 ?>
 
-
-<h3 class="rdt-item-header">
-<span class="rdt-header-prefix"><?php echo $translate('Item'); ?></span>: <?= $item->displayTitle(); ?>
-</h3>
 <?php $this->trigger('view.show.before'); ?>
 <?php if ($embedMedia && $itemMedia): ?>
     <div class="media-embeds">
