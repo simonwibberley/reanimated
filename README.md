@@ -1,8 +1,11 @@
 # reanimated
 
-An Omeka theme.
+An Omeka-S theme.
 
-masonry 4.2.2
+Version requirement: Omeka-S 2.1.2
+
+Embeds dependencies:
+    masonry 4.2.2
 
 ## Color palette
 

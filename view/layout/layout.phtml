@@ -5,6 +5,11 @@
 $this->headLink()->appendStylesheet($this->assetUrl('css/iconfonts.css'));
 $this->headLink()->appendStylesheet($this->assetUrl('css/vendor/normalize.css'));
 $this->headLink()->appendStylesheet($this->assetUrl('css/style.css'));
+
+// Second argument specifies to load a built-in Omeka-S stylesheet.
+// These styles are required to support alignments of media-embeds within page blocks.
+$this->headLink()->appendStylesheet($this->assetUrl('css/page-blocks.css', 'Omeka'));
+
 $this->headLink(['rel' => 'icon', 'href' => $this->assetUrl('img/pulse_logo.png')]);
 
 // Masonry 4.2.2.
