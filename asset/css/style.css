@@ -431,3 +431,12 @@ ul.navigation ul li a {
     clear:both;
     width:150px;
 }
+
+/* Large div is defined by Omeka-S page blocks */
+/* https://forum.omeka.org/t/thumbnails-intermediate-size-when-used-in-media-embeds/11260/2 */
+/* But, page-blocks defines that left and right aligned blocks can only occupy
+   a third of the page.   So we need to only target center blocks which have no
+   such restrictions.  left and right blocks will need their own rules. */
+div.center.large img {
+    height: 775px;    /* or whatever size you want */
+}
