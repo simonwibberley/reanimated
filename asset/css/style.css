@@ -120,11 +120,6 @@ h2 {
 
 header {
     padding: 0.2em;
-    /* border: 0.2em solid hsl(0, 0%, 90%); */
-
-    /* Horizontally limit the size of the site header so that it doesn't
-       flow over the entire page. */
-/*    width: 24em;*/
     display: flex;
 }    
 
@@ -134,8 +129,11 @@ div.rdt-site-title {
 
 div.rdt-banner {
     width: 800px;
-    height: 250px;
+    height: 200px;
     background-color: red;
+
+    /* Center horizontally and vertically in the remaining space */
+    margin: auto; 
 }
 
 div.rdt-search {
