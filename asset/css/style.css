@@ -344,15 +344,15 @@ ul.navigation {
 }
  
 ul.navigation li {
-    display:inline;
-    font-size:12px;
-    font-weight:bold;
-    margin:0;
-    padding:0;
-    float:left;
-    position:relative;
-    border-top:1px solid #c4dbe7;
-    border-bottom:2px solid #c4dbe7;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    border-top: 1px solid #c4dbe7;
+    border-bottom: 2px solid #c4dbe7;
 }
  
 ul.navigation li a {
