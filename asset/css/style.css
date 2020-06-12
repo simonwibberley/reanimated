@@ -132,9 +132,14 @@ div.rdt-site-title {
     flex-basis: 24em;
 }
 
+div.rdt-banner {
+    width: 800px;
+    height: 250px;
+    background-color: red;
+}
+
 div.rdt-search {
-    flex-basis: 10%;
-    margin-left: 50vw;
+    /* no styles here yet */
 }
 
 div.footer {
@@ -440,3 +445,5 @@ ul.navigation ul li a {
 div.center.large img {
     height: 775px;    /* or whatever size you want */
 }
+
+

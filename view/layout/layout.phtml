@@ -32,9 +32,9 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
       <div class="rdt-site-title">
         <h1><?= $site->title() ?></h1>
       </div>
-      <div class="rdt-search">
-        <?= $this->partial('common/search-form') ?>
-      </div>
+
+      <div class="rdt-banner"></div>
+
     </header>
 
 
@@ -42,6 +42,10 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
        <div class="rdt-navigation-menu">
          <?= $site->publicNav()->menu() ?>
        </div>
+
+      <div class="rdt-search">
+        <?= $this->partial('common/search-form') ?>
+      </div>
              
        <div class="rdt-main-content">
          <?= $this->content ?>
