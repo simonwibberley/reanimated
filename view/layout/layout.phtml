@@ -33,18 +33,22 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
         <h1><?= $site->title() ?></h1>
       </div>
 
-      <div class="rdt-banner"></div>
+      <div class="rdt-banner">
+        <img src="<?= $this->assetUrl('img/wall.png') ?>"/>
+      </div>
 
     </header>
 
 
     <div class="rdt-container">
+       <div class="rdt-control-bar">
        <div class="rdt-navigation-menu">
          <?= $site->publicNav()->menu() ?>
        </div>
 
       <div class="rdt-search">
         <?= $this->partial('common/search-form') ?>
+      </div>
       </div>
              
        <div class="rdt-main-content">

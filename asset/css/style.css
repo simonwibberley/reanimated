@@ -20,6 +20,8 @@
     --off-black: hsl(0, 0%, 60%);
     --off-white: hsl(0, 0%, 99%);
 
+    --purple: hsl(282, 50%, 53%)
+
     /*
       dce3df  -- a light grey
 */
@@ -30,7 +32,7 @@ input {
     padding-left: 1em;
 }
 
-a { color: var(--off-black) }
+a { color: var(--purple) }
 a:hover { color: green }
 
 
@@ -90,6 +92,7 @@ h2 {
     /* background: rgba(0, 0, 0, 0.01); */
     list-style-type: none;
     margin-bottom: 8em;
+    padding: 0;
 }
 
 .rdt-grid-item {
@@ -130,7 +133,6 @@ div.rdt-site-title {
 div.rdt-banner {
     width: 800px;
     height: 200px;
-    background-color: red;
 
     /* Center horizontally and vertically in the remaining space */
     margin: auto; 
@@ -271,16 +273,20 @@ button, select, input[type="submit"] {
     padding: 0.25rem 0.5rem;
 }
 
-
-button.rdt-search-button {
-    margin-top: 0.5em;
+div.rdt-search {
+    margin: auto;
+    align-items: center;
+    display: flex;
 }
 
 form.rdt-search-form {
     background-color: hsla(0, 0%, 99%, 30%);
-    padding: 1em;
+/*    padding: 1em;*/
 }
 
+div.rdt-control-bar {
+    display: flex;
+}
 
 
 form[name^="collecting_form_"] {
@@ -326,17 +332,25 @@ td.rdt-thumbnail-cell {
 /* Taken from: Deliciousthemes article by Madalin Tudose. */
 /* https://deliciousthemes.com/create-a-drop-down-navigation-menu-with-html5-and-css3 */
 
+div.rdt-container {
+    margin-top: 1em;
+}
+
 div.rdt-navigation-menu {
+    margin-left: 10vw;
+    /*
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 4em;
+    */
 }
  
 ul.navigation {
-    margin:0px auto;
-    position:relative;
-    float:left;
+    padding: 0;
+    margin: 0px auto;
+    position: relative;
+    float: left;
 
     font-size: 18px;
     font-weight: bold;
@@ -351,7 +365,9 @@ ul.navigation li {
 }
  
 ul.navigation li a {
-    padding: 10px 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 4em;
     color: #616161;
     text-shadow: 1px 1px 0px #fff;
     text-decoration: none;
@@ -385,7 +401,7 @@ ul.navigation ul, ul.navigation ul li ul {
     width: 180px;
     background: #f8f8f8;
     box-shadow: 1px 1px 3px #ccc;
-    transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
 }
  
 ul.navigation ul {
@@ -405,7 +421,7 @@ ul.navigation ul li {
  
 ul.navigation ul li a {
     background: none;
-    padding: 7px 15px;
+    padding: 7px;
     color: #616161;
     text-shadow: 1px 1px 0px #fff;
     text-decoration: none;
