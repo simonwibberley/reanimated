@@ -47,10 +47,6 @@ video {
 
 body {
     background-color: hsl(0, 0%, 99%);
-    background-image: url('../img/background.svg');
-    background-size: 16em;
-    background-repeat: no-repeat;
-    background-attachment: local;
 
     /* From prototype. */
     margin-left: 1em;
@@ -126,9 +122,34 @@ header {
     display: flex;
 }    
 
+
+
 div.rdt-site-title {
     flex-basis: 24em;
 }
+
+/* Fancy logo code, the exact pixel widths are all necessary here */
+div.rdt-logo {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/background.svg');
+    background-size: cover;
+    font-family: "Roboto Slab";
+}
+
+div.rdt-logo-text {
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-left: 32px;
+}
+
+span.rdt-logo-initial-letter {
+    font-weight: bold;
+    font-size: 40px;
+}
+
 
 div.rdt-banner {
     width: 800px;
