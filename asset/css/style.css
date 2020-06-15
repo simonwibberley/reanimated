@@ -306,6 +306,7 @@ form.rdt-search-form {
 
 div.rdt-control-bar {
     display: flex;
+    margin-bottom: 2em;
 }
 
 
@@ -350,6 +351,33 @@ td.rdt-thumbnail-cell {
     text-align: center;
 }
 */
+
+.rdt-browse-results {
+}
+
+.rdt-browse-row {
+    display: flex;
+    background-color: hsla(0, 0%, 90%, 30%);
+    margin-bottom: 1em;
+}
+
+.rdt-browse-item1 {
+    flex-basis: 50%;
+    display: flex;
+    margin: 0px 1em;
+    padding: 1em 0px;
+}
+
+.rdt-browse-item2 {
+    display: flex;
+    flex-basis: 50%;
+    margin: 5px;
+}
+
+.rdt-browse-thumbnail-cell {
+    border: 0.2em solid hsl(282, 50%, 80%);
+}
+
 
 /* BROWSE RESULT PAGE END */
 

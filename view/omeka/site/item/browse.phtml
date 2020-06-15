@@ -51,6 +51,7 @@
 foreach (array_chunk($items, 2) as $row_group) {
 ?>
 
+<div class="rdt-browse-row">
 
 <?php
     $item1 = $row_group[0];
@@ -59,7 +60,7 @@ foreach (array_chunk($items, 2) as $row_group) {
     }
 ?>
 
-  <div class="rdt-browse-item1>
+  <div class="rdt-browse-item1">
     <span><?= $item1->linkRaw($item1->value('dcterms:title')) ?></span>
     <div class="rdt-browse-thumbnail-cell">
       <?= $item1->linkRaw($this->thumbnail($item1, 'medium')) ?>
@@ -69,7 +70,7 @@ foreach (array_chunk($items, 2) as $row_group) {
 <?php 
 if ($item2) {
 ?>
-  <div class="rdt-browse-item2>
+  <div class="rdt-browse-item2">
     <span><?= $item2->linkRaw($item2->value('dcterms:title')) ?></span>
     <div class="rdt-browse-thumbnail-cell">
       <?= $item2->linkRaw($this->thumbnail($item2, 'medium')) ?>
@@ -78,6 +79,8 @@ if ($item2) {
 <?php
 }
 ?>
+
+</div>
 
 <?php
 }
