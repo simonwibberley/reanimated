@@ -1,5 +1,7 @@
 <?php
 
+$this->headTitle($site->title())->setSeparator(' · ');
+
 // As the stylesheet stack is empty by default, the use of append vs. prepend is
 // irrelevant in this context.
 $this->headLink()->appendStylesheet($this->assetUrl('css/iconfonts.css'));
@@ -22,6 +24,7 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
 
 <html>
   <head>
+    <?= $this->headTitle() ?>
     <?= $this->headLink() ?>
     <?= $this->headScript() ?>
 
