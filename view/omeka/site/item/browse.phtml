@@ -66,7 +66,7 @@ foreach (array_chunk($items, 2) as $row_group) {
   </div>
 
 <?php 
-if ($item2) {
+if (isset($item2)) {
 ?>
   <div class="rdt-browse-item">
     <span><?= $item2->linkRaw($item2->value('dcterms:title')) ?></span>
