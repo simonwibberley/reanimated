@@ -328,30 +328,6 @@ textarea {
 }
 
 /* BROWSE RESULT PAGE START */
-/*
-table.rdt-browse-results {
-    table-layout: fixed;
-    border-collapse: collapse;
-}
-
-table.rdt-browse-results tr {
-    border: 1em solid hsla(0, 0%, 99%, 80%);
-    background-color: hsla(0, 0%, 90%, 30%);
-}
-
-table.rdt-browse-results tr:hover {
-    background-color: hsla(0, 0%, 90%, 60%);
-}
-
-table.rdt-browse-results td {
-    border: 1em solid hsla(0, 0%, 99%, 80%);
-}
-
-td.rdt-thumbnail-cell {
-    text-align: center;
-}
-*/
-
 .rdt-browse-results {
 }
 
