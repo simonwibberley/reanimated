@@ -326,6 +326,8 @@ textarea {
     height: 16em;
 }
 
+/* BROWSE RESULT PAGE START */
+/*
 table.rdt-browse-results {
     table-layout: fixed;
     border-collapse: collapse;
@@ -347,6 +349,9 @@ table.rdt-browse-results td {
 td.rdt-thumbnail-cell {
     text-align: center;
 }
+*/
+
+/* BROWSE RESULT PAGE END */
 
 /* MENU CODE */
 /* Taken from: Deliciousthemes article by Madalin Tudose. */

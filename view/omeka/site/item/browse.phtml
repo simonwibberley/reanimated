@@ -46,24 +46,38 @@
 
 </div>
 
-<table class="rdt-browse-results">
+<div class="rdt-browse-results">
 <?php
-foreach ($items as $item) {
+foreach (array_chunk($items, 2) as $row_group) {
 ?>
 
+
 <?php
-    $title = $item->value('dcterms:title');
-    $body = $item->value('dcterms:description');
+    $item1 = $row_group[0];
+    if (isset($row_group[1])) {
+        $item2 = $row_group[1];
+    }
 ?>
 
-  
+  <div class="rdt-browse-item1>
+    <span><?= $item1->linkRaw($item1->value('dcterms:title')) ?></span>
+    <div class="rdt-browse-thumbnail-cell">
+      <?= $item1->linkRaw($this->thumbnail($item1, 'medium')) ?>
+    </div>
+  </div>
 
-  <tr>
-    <td><?= $item->linkRaw($title) ?></td>
-    <td class="rdt-thumbnail-cell">
-      <?= $item->linkRaw($this->thumbnail($item, 'medium')) ?>
-    </td>
-  </tr>
+<?php 
+if ($item2) {
+?>
+  <div class="rdt-browse-item2>
+    <span><?= $item2->linkRaw($item2->value('dcterms:title')) ?></span>
+    <div class="rdt-browse-thumbnail-cell">
+      <?= $item2->linkRaw($this->thumbnail($item2, 'medium')) ?>
+    </div>
+  </div>
+<?php
+}
+?>
 
 <?php
 }
