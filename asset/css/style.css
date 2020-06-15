@@ -394,7 +394,7 @@ ul.navigation li {
 ul.navigation li a {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 4em;
+    padding-right: 3vw;   /* space after nav menu items */
     color: #616161;
     text-shadow: 1px 1px 0px #fff;
     text-decoration: none;
