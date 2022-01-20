@@ -12,6 +12,12 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: "Antonio";
+    src: url("../fonts/Antonio/Antonio-VariableFont_wght.ttf");
+    font-display: block;
+}
+
 /*  Within CSS, all of the URLs should be relative, because a theme could be
     installed under any directory. */
 
@@ -20,7 +26,12 @@
     --off-black: hsl(0, 0%, 60%);
     --off-white: hsl(0, 0%, 99%);
 
-    --purple: hsl(282, 50%, 53%)
+    --purple: hsl(282, 50%, 53%);
+
+    /*--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+    --font-family-sans-serif: "Antonio";
+    --font-family-monospace: "Courier";
+
 
     /*
       dce3df  -- a light grey
@@ -31,8 +42,13 @@ input {
     padding-left: 1em;
 }
 
-a { color: var(--purple) }
-a:hover { color: green }
+a {
+    color: black;
+    text-decoration: underline;
+}
+a:hover {
+    color: green
+}
 
 
 /*
@@ -54,11 +70,15 @@ body {
        SVG to resize in an ugly way */
     overflow-y: scroll;
 
-    font-family: "Didact Gothic", sans-serif;
-    
+    /*font-family: "Didact Gothic", sans-serif;*/
+    /*font-family: "Antonio", sans-serif;*/
+    font: 1rem/1.5 var(--font-family-monospace);
+
     /* Style rules from BMFW.  These make a HUGE difference */
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    /*line-height: 1.6;*/
+    line-height: 1.1;
+
 }
 
 
@@ -66,24 +86,30 @@ body {
    of a given page.  This seems to be controlled by the file
    `src/Site/BlockLayout/PageTitle.php`. */
 h1, h2, h3, h4 {
-    font-family: "Roboto Slab", serif;
+    font-family: "Antonio", serif;
+    /*font: var(--font-family-sans-serif);*/
     font-style: normal;
     font-weight: 100;
 }
 
 h1 {
-    font-size: 2.0em;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
+    font-size: 5.0rem;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 0.2em;*/
+    color: hsl(306deg 48% 40%);
 }
 
 h2 {
-    font-size: 1.6em;
-    letter-spacing: 0.05em;
+    font-size: 4.0em;
+    /*letter-spacing: 0.05em;*/
+    text-transform: uppercase;
+
+    color: hsl(306deg 48% 40%);
+
 }
 
 .fays-welcome-1 {
-    font-size: 6vw;
+    font-size: 8vw;
     font-weight: bold;
 }
 
@@ -96,8 +122,8 @@ h2 {
     background-size: cover;
     background-clip: border-box;
 
-    padding: 1vw;
-
+    padding: 0.6em;
+    padding-right: 7em;
 }
 
 .fays-welcome {
@@ -114,7 +140,42 @@ h2 {
     background-position-y: top ;
 }
 
+.fays-block-pad {
+    margin-top:6rem;
+}
+.fays-block {
+    font-family: "Antonio", serif;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    margin: 0.1rem;
+    background: url("../img/2022-fays-block.png") right no-repeat;
+    background-size: contain;
+    line-height: 1.1;
+}
+
+
+.fays-block a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+
+.fays-block a:hover {
+    color: #000000;
+}
+
 .fays-header {
+}
+
+.fays-footer {
+    background: url("../img/2022-fays-footer.png") right no-repeat;
+    background-size:50%;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .fays-nav {
@@ -126,8 +187,8 @@ h2 {
 .fays-logo {
     background: url("../img/2022-fays-logo.png") no-repeat;
     background-size: contain;
-    margin: 20px;
-    height: 140px;
+    margin: 1vw;
+    height: 10vw;
 }
 
 
@@ -450,16 +511,17 @@ ul.navigation li {
  
 ul.navigation li a {
     font-size: 16px;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 1.1vw;   /* space after nav menu items */
+    padding-left: 1em;   /* space after nav menu items */
     /* color: #616161; */
     color: #ffffff;
     /*text-shadow: 1px 1px 0px #fff;*/
     text-decoration: none;
     display: inline-block;
     transition: color 0.2s linear;
+    font-family: "Antonio", serif;
 }
  
 ul.navigation li a:hover {
