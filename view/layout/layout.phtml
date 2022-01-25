@@ -54,12 +54,12 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
   </head>
 
   <body>
-    <div class="container-fluid fays-background" >
+    <div class="container-fluid fays-home-background" >
 
         <div class="row fays-header">
 
             <div class="col-4">
-                <div class="fays-logo"></div>
+                <a href="/" ><div class="fays-logo"></div></a>
             </div>
 
             <div class="fays-nav col-8">
@@ -67,51 +67,8 @@ $this->headScript()->appendFile($this->assetUrl('js/reanimated.js'));
             </div>
 
         </div>
-
-        <?= $this->partial('common/welcome') ?>
-
-
-        <div class="row">
-            <div class="col-6">
-                <?= $this->content ?>
-            </div>
-
-            <div class="col-6 fays-block-pad">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="fays-block">
-                            <a href="">
-                                Browse the selections &gt;&gt;
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="fays-block">
-                            <a href="">
-                                Search the archive &gt;&gt;
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="fays-block">
-                            <a href="">
-                                Explore our exhibitions &gt;&gt;
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="fays-block">
-                            <a href="">
-                                Read more about us &gt;&gt;
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        
+        <?= $this->content ?>
 
 <!--        <?////= $this->partial('common/search-form') ?> -->
 

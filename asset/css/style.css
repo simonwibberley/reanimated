@@ -96,14 +96,14 @@ h1 {
     font-size: 5.0rem;
     /*text-transform: uppercase;*/
     /*letter-spacing: 0.2em;*/
-    color: hsl(306deg 48% 40%);
+    color: black;
 }
 
 h2 {
     font-size: 4.0em;
     /*letter-spacing: 0.05em;*/
     text-transform: uppercase;
-
+    font-weight: bold;
     color: hsl(306deg 48% 40%);
 
 }
@@ -133,7 +133,7 @@ h2 {
     background-size: contain;
 }
 
-.fays-background {
+.fays-home-background {
     background: url("../img/2022-fays-black-brush.png") right no-repeat;
 
     background-size: 40%;
@@ -160,6 +160,7 @@ h2 {
     color: white;
     text-decoration: none;
     transition: color 0.2s linear;
+    text-transform: uppercase;
 }
 
 
