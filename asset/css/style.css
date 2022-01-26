@@ -109,12 +109,12 @@ h2 {
 }
 
 .fays-welcome-1 {
-    font-size: 8vw;
+    font-size: 40pt;
     font-weight: bold;
 }
 
 .fays-welcome-2 {
-    font-size: 4vw;
+    font-size: 26pt;
     font-weight: bold;
     color: white;
     background: url("../img/2022-fays-welcome-right.png") left no-repeat;
@@ -122,8 +122,8 @@ h2 {
     background-size: cover;
     background-clip: border-box;
 
-    padding: 0.6em;
-    padding-right: 7em;
+    padding: 1rem;
+    padding-right: 14rem;
 }
 
 .fays-welcome {
@@ -143,15 +143,17 @@ h2 {
 .fays-block-pad {
     margin-top:6rem;
 }
+
 .fays-block {
     font-family: "Antonio", serif;
-    font-size: 3vw;
+    font-size: 20pt;
     font-weight: bold;
     color: white;
     padding: 1rem;
+    padding-right: 2rem;
     margin: 0.1rem;
-    background: url("../img/2022-fays-block.png") right no-repeat;
-    background-size: contain;
+    background: url("../img/2022-fays-block.png") ;
+    background-size: cover;
     line-height: 1.1;
 }
 
@@ -192,6 +194,21 @@ h2 {
     height: 10vw;
 }
 
+
+.fays-item-caption > a {
+    font-family: "Antonio", serif;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    color: hsl(306deg 48% 40%);
+
+}
+
+.fays-item img {
+    background: url("../img/2022-fays-item-background.png") no-repeat;
+    background-size: contain;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
 
 .rdt-masonry-grid {
     /* background: rgba(0, 0, 0, 0.01); */
@@ -419,18 +436,32 @@ div.rdt-control-bar {
     margin-bottom: 2em;
 }
 
+label[for^="file[4]"] {
+    display: none;
+}
+
+
+form[name^="collecting_form_"] .field-meta label {
+    margin-top: 8px;
+    margin-left: 20px;
+    position: absolute;
+    color: black;
+}
 
 form[name^="collecting_form_"] {
     background-color: hsla(0, 0%, 99%, 30%);
+    background: url("../img/2022-fays-contribute.png") no-repeat;
+    background-size: cover;
+    color: white;
 }
 
 form[name^="collecting_form_"] div.field {
-    padding: 1em;
-    margin: 1em;
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
 
 form[name^="collecting_form_"] input[type="text"],textarea {
-    width: 32em;
+    width: 80%;
 }
 
 textarea {
