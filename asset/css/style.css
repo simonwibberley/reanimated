@@ -182,9 +182,10 @@ h2 {
 }
 
 .fays-nav {
-    background: url("../img/2022-fays-header-nav.png") no-repeat;
+    background: url("../img/2022-fays-header-nav.png") bottom no-repeat;
     background-size: cover;
-    background-position-y: -70px;
+    /*background-position-y: -70px;*/
+    padding-bottom: 16px;
 }
 
 .fays-logo {
@@ -441,6 +442,10 @@ label[for^="file[4]"] {
 }
 
 
+form[name^="collecting_form_"]  {
+    padding-top: 30px;
+}
+
 form[name^="collecting_form_"] .field-meta label {
     margin-top: 8px;
     margin-left: 20px;
@@ -516,7 +521,7 @@ div.rdt-navigation-menu {
 
 div.fays-nav {
 
-    height: 100px;
+    /*height: 100px;*/
 }
 
 ul.navigation {
@@ -543,7 +548,6 @@ ul.navigation li {
  
 ul.navigation li a {
     font-size: 16px;
-    font-size: 1.5vw;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 1em;   /* space after nav menu items */
