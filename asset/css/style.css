@@ -108,6 +108,15 @@ h2 {
 
 }
 
+h3 {
+    font-size: 14pt;
+    /*letter-spacing: 0.05em;*/
+    text-transform: uppercase;
+    font-weight: bold;
+    color: hsl(306deg 48% 40%);
+
+}
+
 .fays-welcome-1 {
     font-size: 40pt;
     font-weight: bold;
@@ -181,6 +190,10 @@ h2 {
     padding-top: 1rem;
 }
 
+.fays-four-links {
+    margin-top: 30px;
+}
+
 .fays-nav {
     background: url("../img/2022-fays-header-nav.png") bottom no-repeat;
     background-size: cover;
@@ -211,9 +224,30 @@ h2 {
     width: -moz-available;
 }
 
+.fays-link {
+    background: url("../img/2022-fays-link-bottom.png") bottom no-repeat;
+    background-size: contain;
+    padding-bottom: 20px;
+}
+
+.fays-link a {
+    text-align: center;
+    text-decoration: none;
+}
+.fays-link img {
+    width: 100%;
+}
+
 .item-set {
     background: url("../img/2022-fays-item-set-bottom.png") bottom no-repeat;
     background-size: contain;
+}
+
+.break {
+    background: url("../img/2022-fays-break.png") top no-repeat;
+    background-size: cover;
+    margin: 0 !important;
+    padding-top: 40px;
 
 }
 
