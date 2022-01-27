@@ -211,6 +211,12 @@ h2 {
     width: -moz-available;
 }
 
+.item-set {
+    background: url("../img/2022-fays-item-set-bottom.png") bottom no-repeat;
+    background-size: contain;
+
+}
+
 .rdt-masonry-grid {
     /* background: rgba(0, 0, 0, 0.01); */
     list-style-type: none;

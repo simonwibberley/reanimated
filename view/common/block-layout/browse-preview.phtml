@@ -1,12 +1,13 @@
-<div>
-<ul class="resource-list preview rdt-masonry-grid">
+<div class="row">
 <?php foreach ($this->resources as $resource): ?>
-    <li class="<?php echo $this->resourceType; ?> resource rdt-grid-item">
-    <?php echo $resource->linkRaw($this->thumbnail($resource, 'medium', ['title' => $heading])); ?>
-             <span><?= $resource->link($resource->displayTitle()); ?></span>
-    </li>
+    <div class="<?php echo $this->resourceType; ?> col-6">
+        <div class="fays-item">
+
+            <?php echo $resource->linkRaw($this->thumbnail($resource, 'medium', ['title' => $heading])); ?>
+             <div class="fays-item-caption"><?= $resource->link($resource->displayTitle()); ?></div>
+        </div>
+    </div>
 <?php endforeach; ?>
-</ul>
 <!-- Masonry grid items use floats so they need to be cleared -->
 <div class="rdt-clearleft"></div>
 </div>
