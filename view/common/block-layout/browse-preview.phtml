@@ -1,6 +1,6 @@
 <div class="row">
 <?php foreach ($this->resources as $resource): ?>
-    <div class="<?php echo $this->resourceType; ?> col-6">
+    <div class="<?php echo $this->resourceType; ?> col-sm-6 col-xs-12 ">
         <div class="fays-item">
 
             <?php echo $resource->linkRaw($this->thumbnail($resource, 'medium', ['title' => $heading])); ?>

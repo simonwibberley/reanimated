@@ -487,10 +487,11 @@ form[name^="collecting_form_"]  {
 }
 
 form[name^="collecting_form_"] .field-meta label {
-    margin-top: 8px;
+    /*margin-top: 8px;
     margin-left: 20px;
-    position: absolute;
-    color: black;
+    position: absolute;*/
+    color: white;
+    font-weight: bold;
 }
 
 form[name^="collecting_form_"] {
