@@ -1,5 +1,40 @@
 /* style.css */
 
+    legend {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    h1,
+    .h1 {
+        font-size: calc(1.375rem + 4vw);
+    }
+    h2,
+    .h2 {
+        font-size: calc(1rem + 2vw);
+    }
+    h3,
+    .h3 {
+        font-size: calc(1.3rem + 2.5vw);
+    }
+    h4,
+    .h4 {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    .display-1 {
+        font-size: calc(1.725rem + 5.7vw);
+    }
+    .display-2 {
+        font-size: calc(1.675rem + 5.1vw);
+    }
+    .display-3 {
+        font-size: calc(1.575rem + 3.9vw);
+    }
+    .display-4 {
+        font-size: calc(1.475rem + 2.7vw);
+    }
+    .close {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+
 @font-face {
     font-family: "Didact Gothic";
     src: url("../fonts/DidactGothicRegular.woff2");
@@ -15,6 +50,12 @@
 @font-face {
     font-family: "Antonio";
     src: url("../fonts/Antonio/Antonio-VariableFont_wght.ttf");
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Anton";
+    src: url("../fonts/Anton-Regular.ttf");
     font-display: block;
 }
 
@@ -100,7 +141,16 @@ h1 {
 }
 
 h2 {
-    font-size: 4.0em;
+    /*font-size: 4.0em;*/
+    /*letter-spacing: 0.05em;*/
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+    color: hsl(306deg 48% 40%);
+
+}
+
+h3 {
+    /*font-size: 14pt;*/
     /*letter-spacing: 0.05em;*/
     text-transform: uppercase;
     font-weight: bold;
@@ -108,8 +158,8 @@ h2 {
 
 }
 
-h3 {
-    font-size: 14pt;
+h4 {
+    /*font-size: 14pt;*/
     /*letter-spacing: 0.05em;*/
     text-transform: uppercase;
     font-weight: bold;
@@ -118,12 +168,12 @@ h3 {
 }
 
 .fays-welcome-1 {
-    font-size: 40pt;
+    /*font-size: 40pt;*/
     font-weight: bold;
 }
 
 .fays-welcome-2 {
-    font-size: 26pt;
+    /*font-size: 26pt;*/
     font-weight: bold;
     color: white;
     background: url("../img/2022-fays-welcome-right.png") left no-repeat;
@@ -132,7 +182,7 @@ h3 {
     background-clip: border-box;
 
     padding: 1rem;
-    padding-right: 14rem;
+    /*padding-right: 14rem;*/
 }
 
 .fays-welcome {
@@ -140,6 +190,7 @@ h3 {
 
     background-position-y: top ;
     background-size: contain;
+    padding-left: 16px;
 }
 
 .fays-home-background {
@@ -154,9 +205,8 @@ h3 {
 }
 
 .fays-block {
-    font-family: "Antonio", serif;
+    font-family: "Anton", serif;
     font-size: 20pt;
-    font-weight: bold;
     color: white;
     padding: 1rem;
     padding-right: 2rem;
