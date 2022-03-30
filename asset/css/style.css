@@ -516,6 +516,64 @@ form.sorting > * {
     margin-right: 1em;
 }
 
+#advanced-search {
+    padding: 16px 32px 16px 32px;
+    background-image: url('../img/2022-fays-adv-search-bg.png');
+    background-size: cover;
+    background-origin: padding-box;
+    color: white;
+    margin-bottom: 60px;
+    font-family: Anton;
+    text-transform: uppercase;
+
+}
+
+#advanced-search input[name=submit] {
+    background-image: url('../img/2022-fays-search.png');
+    background-size: cover;
+    float: right;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 15px 25px 15px 15px;
+    margin-top: 20px;
+}
+
+#advanced-search button.remove-value {
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 150px;
+
+}
+#advanced-search button.remove-value::before {
+    content: '';
+}
+
+#advanced-search div.value {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#advanced-search div.field-meta {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#advanced-search button.remove-value {
+    margin-left: auto;
+
+}
+
+#advanced-search a.add-value {
+    color: white;
+    font-family: Courier;
+    font-weight: bold;
+    text-transform: none;
+
+}
 
 div.rdt-advanced-search-link {
     margin-top: 0.5rem;
