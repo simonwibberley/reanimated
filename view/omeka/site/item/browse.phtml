@@ -64,7 +64,7 @@ foreach (array_chunk($items, 4) as $row_group) {
 ?>
 
 
-  <div class="col-3">
+  <div class="col-12 col-md-3">
     <div class="fays-item">
         <?= $item1->linkRaw($this->thumbnail($item1, 'medium')) ?>
     </div>
@@ -75,7 +75,7 @@ foreach (array_chunk($items, 4) as $row_group) {
     //col2
     if (isset($item2)) {
     ?>
-        <div class="col-3">
+        <div class="col-12 col-md-3">
             <div class="fays-item">
                 <?= $item2->linkRaw($this->thumbnail($item2, 'medium')) ?>
             </div>
@@ -89,7 +89,7 @@ foreach (array_chunk($items, 4) as $row_group) {
     //col3
     if (isset($item3)) {
         ?>
-        <div class="col-3">
+        <div class="col-12 col-md-3">
             <div class="fays-item">
                 <?= $item3->linkRaw($this->thumbnail($item3, 'medium')) ?>
             </div>
@@ -104,7 +104,7 @@ foreach (array_chunk($items, 4) as $row_group) {
     //col4
     if (isset($item4)) {
         ?>
-        <div class="col-3">
+        <div class="col-12 col-md-3">
             <div class="fays-item">
                 <?= $item4->linkRaw($this->thumbnail($item4, 'medium')) ?>
             </div>
