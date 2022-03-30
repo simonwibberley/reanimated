@@ -9,7 +9,7 @@ $translate = $this->plugin('translate');
         <?php echo $this->queryToHiddenInputs(['page']); ?>
         Page <input type="text" name="page" class="page-input-top" value="<?php echo $currentPage; ?>" size="4" <?php echo ($pageCount == 1) ? 'readonly' : ''; ?> aria-label="<?php echo $translate('Page'); ?>">
         <span class="page-count"><?php echo sprintf($translate('of %s'), $pageCount); ?></span>
-    </form>
+
 
     <div class="rdt-page-buttons">
     <?php if ($currentPage != 1): ?>
@@ -24,12 +24,13 @@ $translate = $this->plugin('translate');
     <span class="next o-icon-next button inactive"></span>
     <?php endif; ?>
     </div>
-
     <?php
     $from = $offset + 1;
     $to = ($currentPage < $pageCount) ? $offset + $perPage : $totalCount;
     ?>
     <span class="row-count">Showing items <?= sprintf($translate('%s–%s of %s'), $from, $to, $totalCount) ?>.</span>
+    </form>
+
 <?php else: ?>
     <?php echo $translate('0 results'); ?>
 <?php endif; ?>

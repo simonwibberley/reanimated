@@ -477,8 +477,14 @@ div.browse-controls {
 }
 
 
+nav.pagination input[name="page"] {
+    background-color: black;
+    color: white;
+}
+
 nav.pagination {
     margin-bottom: 1em;
+    font-family: Antonio;
 }
 
 nav.pagination > form {
@@ -486,13 +492,23 @@ nav.pagination > form {
 }
 
 input.page-input-top {
-    width: 1.5em;
+    width: 2.5em;
+    background-color: black;
+    color: white;
 }
 
 div.rdt-page-buttons {
     display: inline;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+
+
+div.rdt-page-buttons .previous,.next {
+    background-image: url('../img/2022-fays-pagination.png');
+    background-size: cover;
+    padding: 6px;
 }
 
 
