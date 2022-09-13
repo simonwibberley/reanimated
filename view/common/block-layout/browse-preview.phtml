@@ -4,8 +4,8 @@
         <div class="fays-item">
 
             <?php echo $resource->linkRaw($this->thumbnail($resource, 'medium', ['title' => $heading])); ?>
-             <div class="fays-item-caption h4"><?= $resource->link($resource->displayTitle()); ?></div>
         </div>
+        <div class="fays-item-caption h4"><?= $resource->link($resource->displayTitle()); ?></div>
     </div>
 <?php endforeach; ?>
 <!-- Masonry grid items use floats so they need to be cleared -->
