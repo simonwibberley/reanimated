@@ -500,6 +500,9 @@ td.rdt-property {
     text-transform: uppercase;
     font-weight: bold;
     vertical-align: top;
+    font-family: "Antonio", serif;
+    color: hsl(306deg 48% 40%);
+
 }
 
 /* Browse controls on the search result page */
@@ -541,6 +544,7 @@ div.rdt-page-buttons .previous,.next {
     background-image: url('../img/2022-fays-pagination.png');
     background-size: cover;
     padding: 6px;
+    color: white;
 }
 
 
