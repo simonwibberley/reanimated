@@ -164,8 +164,11 @@ h4 {
     text-transform: uppercase;
     font-weight: bold !important;
     color: hsl(306deg 48% 40%);
-    text-align: center;
+    /*text-align: center;*/
+}
 
+h4 a {
+    color: hsl(306deg 48% 40%);
 
 }
 
@@ -232,6 +235,7 @@ h4 {
 }
 
 .fays-header {
+    margin-bottom: 40px;
 }
 
 .fays-footer {
@@ -550,6 +554,15 @@ div.rdt-page-buttons .previous,.next {
 
 form.sorting > * {
     margin-right: 1em;
+    background-color: black;
+    color: white;
+    font-family: "Antonio", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form.sorting > button {
+    background-color: hsl(282, 50%, 53%);   
 }
 
 #advanced-search {
@@ -659,6 +672,7 @@ form[name^="collecting_form_"] {
     background: url("../img/2022-fays-contribute.png") no-repeat;
     background-size: cover;
     color: white;
+    padding-bottom: 20px;
 }
 
 form[name^="collecting_form_"] div.field {
@@ -669,6 +683,20 @@ form[name^="collecting_form_"] div.field {
 form[name^="collecting_form_"] input[type="text"],textarea {
     width: 80%;
 }
+
+form[name^="collecting_form_"] input[type="submit"] {
+    background: url("../img/2022-fays-submit.png") no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 115px;
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-right: 140px;
+    margin-top: 20px;
+    float: right;
+
+}
+
 
 textarea {
     height: 16em;
